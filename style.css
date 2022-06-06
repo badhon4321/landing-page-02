@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-c{
+    background-image: url(images/red-throated-barbet-7024605.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 660px;
+}
+
+.header{
+    padding: 33px;
+    margin: 0 auto;
+}
+
+.header .logo{
+    display: flex;
+    color: aliceblue;
+    float: left;
+    padding: 5px;   
+}
+
+.header .menu{
+    float: right;
+}
+
+.menu ul li{
+    display: inline-block;
+}
+
+.menu nav ul li a {
+    display: block;
+    color: aliceblue;
+    padding: 4px;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.hover {
+    display: inline-block;
+    position: relative;
+    color: #54f124;
+  }
+
+.hover:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #2bba18;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-in-out;
+  }
+
+.hover:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+.text{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+h3{
+    font-size: 40px;
+}
+
+h5{
+    font-size: 20px;
+}
+
+p{
+    font-size: 16px;
+}
+
+button{
+    padding: 6px;
+}
